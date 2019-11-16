@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Presentation">
+      <UniqueIdentifier>{d24f3e45-29b4-413e-8aeb-7a8b7de39dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{f706229a-e53f-4613-a36e-d777014971e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameClass">
+      <UniqueIdentifier>{c3334f96-62f5-4b47-a7dd-881d2953400a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{3d32a544-6aad-4c31-a9fe-265993684270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Collider">
+      <UniqueIdentifier>{9b806fb6-0d85-43f4-b57d-d18bb53d6951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Animation">
+      <UniqueIdentifier>{32743957-1080-4c5a-8025-e65937d5bf0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameClass\Sound">
+      <UniqueIdentifier>{71d8a687-e3fc-4c23-8fbf-a8803b586789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{728e2eb4-89d9-4a87-bfb8-650100240b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{035553b5-8535-4ac0-92b0-5d69e479991e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\note">
+      <UniqueIdentifier>{1208f0f6-3a55-40fb-a35c-37a6325a4733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\line">
+      <UniqueIdentifier>{0f72a8ce-63aa-4320-b58e-9374544b88e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\key">
+      <UniqueIdentifier>{bcde02d1-0422-439a-9758-65e290a4d45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Start">
+      <UniqueIdentifier>{328a80e3-bf63-4cc9-97e0-be6e73ed3c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game_hard">
+      <UniqueIdentifier>{4758d8c9-befb-450d-9ecf-58e34425565d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game_story">
+      <UniqueIdentifier>{38829f73-9d72-4095-9aa7-468d1c954015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game_hard\Scene">
+      <UniqueIdentifier>{21271d47-2d04-4d0b-a696-62e979c98641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game_story\Scene">
+      <UniqueIdentifier>{611e5ce2-ed2b-4448-84bb-69f58767f1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game_hard\Manager">
+      <UniqueIdentifier>{cfb6bc61-99b1-4c56-b715-3834468aa698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\score">
+      <UniqueIdentifier>{61c66702-4250-40e4-9699-be77682cdfc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\light">
+      <UniqueIdentifier>{4373a548-58cd-450b-b308-fa5ed2698bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\black">
+      <UniqueIdentifier>{9c0a2708-a186-43ef-87a3-b1c23104f983}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D2DApp.cpp">
+      <Filter>Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework.cpp">
+      <Filter>Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="WinApp.cpp">
+      <Filter>Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameClass</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Transform.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>GameClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>GameClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Collider.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AABBCollider.cpp">
+      <Filter>Components\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleCollider.cpp">
+      <Filter>Components\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObject.cpp" />
+    <ClCompile Include="Collision.cpp">
+      <Filter>Components\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationRenderer.cpp">
+      <Filter>Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAnimation.cpp">
+      <Filter>Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetAnimation.cpp">
+      <Filter>Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>GameClass\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEvent.cpp">
+      <Filter>GameClass\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene2.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>Start</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuManager.cpp">
+      <Filter>Start</Filter>
+    </ClCompile>
+    <ClCompile Include="CenterNote.cpp">
+      <Filter>Assets\note</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Assets\line</Filter>
+    </ClCompile>
+    <ClCompile Include="UpLine.cpp">
+      <Filter>Assets\line</Filter>
+    </ClCompile>
+    <ClCompile Include="UnderLine.cpp">
+      <Filter>Assets\line</Filter>
+    </ClCompile>
+    <ClCompile Include="Key1.cpp">
+      <Filter>Assets\key</Filter>
+    </ClCompile>
+    <ClCompile Include="Key2.cpp">
+      <Filter>Assets\key</Filter>
+    </ClCompile>
+    <ClCompile Include="Key3.cpp">
+      <Filter>Assets\key</Filter>
+    </ClCompile>
+    <ClCompile Include="Key4.cpp">
+      <Filter>Assets\key</Filter>
+    </ClCompile>
+    <ClCompile Include="SideNote.cpp">
+      <Filter>Assets\note</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSceneHard.cpp">
+      <Filter>Game_hard\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSceneStory.cpp">
+      <Filter>Game_story\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NoteManager_hard.cpp">
+      <Filter>Game_hard\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Game_hard\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Assets\light</Filter>
+    </ClCompile>
+    <ClCompile Include="Light_reversed.cpp">
+      <Filter>Assets\light</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearedAnimation.cpp">
+      <Filter>Assets\note</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreManager.cpp">
+      <Filter>Assets\score</Filter>
+    </ClCompile>
+    <ClCompile Include="Black.cpp">
+      <Filter>Assets\black</Filter>
+    </ClCompile>
+    <ClCompile Include="Appear.cpp">
+      <Filter>Assets\black</Filter>
+    </ClCompile>
+    <ClCompile Include="FailedScene.cpp">
+      <Filter>Game_hard\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FailedManager.cpp">
+      <Filter>Game_hard\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SucceededScene.cpp">
+      <Filter>Game_hard\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SucceededManager.cpp">
+      <Filter>Game_hard\Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WinApp.h">
+      <Filter>Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="D2DApp.h">
+      <Filter>Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>GameClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>GameClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>GameClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Collider.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AABBCollider.h">
+      <Filter>Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleCollider.h">
+      <Filter>Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObject.h" />
+    <ClInclude Include="Collision.h">
+      <Filter>Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationRenderer.h">
+      <Filter>Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAnimation.h">
+      <Filter>Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetAnimation.h">
+      <Filter>Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>GameClass\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEvent.h">
+      <Filter>GameClass\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene2.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>Start</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuManager.h">
+      <Filter>Start</Filter>
+    </ClInclude>
+    <ClInclude Include="CenterNote.h">
+      <Filter>Assets\note</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Assets\line</Filter>
+    </ClInclude>
+    <ClInclude Include="UpLine.h">
+      <Filter>Assets\line</Filter>
+    </ClInclude>
+    <ClInclude Include="UnderLine.h">
+      <Filter>Assets\line</Filter>
+    </ClInclude>
+    <ClInclude Include="Key1.h">
+      <Filter>Assets\key</Filter>
+    </ClInclude>
+    <ClInclude Include="Key2.h">
+      <Filter>Assets\key</Filter>
+    </ClInclude>
+    <ClInclude Include="Key3.h">
+      <Filter>Assets\key</Filter>
+    </ClInclude>
+    <ClInclude Include="Key4.h">
+      <Filter>Assets\key</Filter>
+    </ClInclude>
+    <ClInclude Include="SideNote.h">
+      <Filter>Assets\note</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSceneHard.h">
+      <Filter>Game_hard\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSceneStory.h">
+      <Filter>Game_story\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NoteManager_hard.h">
+      <Filter>Game_hard\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>Game_hard\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Assets\light</Filter>
+    </ClInclude>
+    <ClInclude Include="Light_reversed.h">
+      <Filter>Assets\light</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearedAnimation.h">
+      <Filter>Assets\note</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreManager.h">
+      <Filter>Assets\score</Filter>
+    </ClInclude>
+    <ClInclude Include="Black.h">
+      <Filter>Assets\black</Filter>
+    </ClInclude>
+    <ClInclude Include="Appear.h">
+      <Filter>Assets\black</Filter>
+    </ClInclude>
+    <ClInclude Include="FailedScene.h">
+      <Filter>Game_hard\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FailedManager.h">
+      <Filter>Game_hard\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SucceededScene.h">
+      <Filter>Game_hard\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SucceededManager.h">
+      <Filter>Game_hard\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Math.inl">
+      <Filter>GameClass</Filter>
+    </None>
+  </ItemGroup>
+</Project>
