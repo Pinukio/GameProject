@@ -6,9 +6,9 @@ class FailedManager :
 private:
 	GameObject* arrow;
 	unsigned short selected = 0;
-
+	bool isStory;
 public:
-	FailedManager();
+	FailedManager(bool isStory);
 	virtual void Update();
 };
 

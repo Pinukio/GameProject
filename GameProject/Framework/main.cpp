@@ -4,10 +4,12 @@
 #include "Math.h"
 #include "StartScene.h"
 
+#pragma comment(linker, "/ENTRY:mainCRTStartup")
+
 int main()
 {
 	Framework& f = Framework::GetInstance();
-	f.Run(new StartScene(),L"酒海内海 Re:Dive", 1920, 1080, true);
+	f.Run(new StartScene(), L"酒海内海 Re:Dive", 1920, 1080, true);
 
 	return 0;
 }

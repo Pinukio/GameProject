@@ -7,7 +7,6 @@ SideNote::SideNote()
 	moveSpeed(15.0f),
 	col(*transform, Vector2(130.0f, 63.0f))
 {
-
 }
 
 void SideNote::Update()

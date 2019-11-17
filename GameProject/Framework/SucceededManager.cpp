@@ -4,9 +4,10 @@
 #include "InputManager.h"
 #include "Black.h"
 
-SucceededManager::SucceededManager()
+SucceededManager::SucceededManager(bool isStory)
 {
 	arrow = Scene::GetCurrentScene().PushBackGameObject(new GameObject(L"resources/Scene/Failed/arrow.png", Vector2(1550.0f, 700.0f)));
+	this->isStory = isStory;
 }
 
 void SucceededManager::Update()
@@ -44,7 +45,10 @@ void SucceededManager::Update()
 		switch (selected)
 		{
 		case 0:
-			Scene::GetCurrentScene().PushBackGameObject(new Black(1)); // hard
+			if (!isStory)
+				Scene::GetCurrentScene().PushBackGameObject(new Black(1)); // hard
+			else
+				Scene::GetCurrentScene().PushBackGameObject(new Black(2)); // story
 			break;
 		case 1:
 			Scene::GetCurrentScene().PushBackGameObject(new Black(0)); // start

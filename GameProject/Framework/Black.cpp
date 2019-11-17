@@ -8,7 +8,8 @@
 #include "SucceededScene.h"
 #include <time.h>
 
-Black::Black(unsigned short num)
+Black::Black(unsigned short num, bool isStory)
+	:isStory(isStory)
 {
 	black = new GameObject(L"resources/background/black.png", Vector2(1920 / 2.0f, 1080 / 2.0f));
 	Scene::GetCurrentScene().PushBackGameObject(black);
@@ -20,8 +21,8 @@ Black::Black(unsigned short num)
 	}
 }
 
-Black::Black(unsigned short perfect, unsigned short great, unsigned short miss)
-	:perfect(perfect), great(great), miss(miss)
+Black::Black(unsigned short perfect, unsigned short great, unsigned short miss, bool isStory)
+	:perfect(perfect), great(great), miss(miss), isStory(isStory)
 {
 	black = new GameObject(L"resources/background/black.png", Vector2(1920 / 2.0f, 1080 / 2.0f));
 	Scene::GetCurrentScene().PushBackGameObject(black);
@@ -51,10 +52,10 @@ void Black::Update()
 			Scene::GetCurrentScene().ChangeScene(new GameSceneStory());
 			break;
 		case 3:
-			Scene::GetCurrentScene().ChangeScene(new FailedScene());
+			Scene::GetCurrentScene().ChangeScene(new FailedScene(isStory));
 			break;
 		case 4:
-			Scene::GetCurrentScene().ChangeScene(new SucceededScene(perfect, great, miss));
+			Scene::GetCurrentScene().ChangeScene(new SucceededScene(perfect, great, miss, isStory));
 			break;
 		case 5:
 			exit(0);

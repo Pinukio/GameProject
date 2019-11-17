@@ -11,10 +11,11 @@ private:
 	int pastTime = 0;
 	int currentTime;
 	unsigned short num, perfect, great, miss;
+	bool isStory;
 
 public:
-	Black(unsigned short num);
-	Black(unsigned short perfect, unsigned short great, unsigned short miss);
+	Black(unsigned short num, bool isStory = false);
+	Black(unsigned short perfect, unsigned short great, unsigned short miss, bool isStory = false);
 	virtual void Update();
 };
 

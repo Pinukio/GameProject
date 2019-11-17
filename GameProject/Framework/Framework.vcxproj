@@ -126,7 +126,7 @@
       </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>
@@ -151,7 +151,6 @@
     <ClCompile Include="FailedScene.cpp" />
     <ClCompile Include="Framework.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameSceneHard.cpp" />
     <ClCompile Include="GameSceneStory.cpp" />
     <ClCompile Include="InputManager.cpp" />
@@ -167,8 +166,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuManager.cpp" />
     <ClCompile Include="CenterNote.cpp" />
-    <ClCompile Include="NoteManager_hard.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="NoteManager.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="Scene.cpp" />
@@ -179,8 +177,6 @@
     <ClCompile Include="StartScene.cpp" />
     <ClCompile Include="SucceededManager.cpp" />
     <ClCompile Include="SucceededScene.cpp" />
-    <ClCompile Include="TestObject.cpp" />
-    <ClCompile Include="TestScene2.cpp" />
     <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="UnderLine.cpp" />
@@ -204,7 +200,6 @@
     <ClInclude Include="FailedScene.h" />
     <ClInclude Include="Framework.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameSceneHard.h" />
     <ClInclude Include="GameSceneStory.h" />
     <ClInclude Include="InputManager.h" />
@@ -220,8 +215,7 @@
     <ClInclude Include="Math.h" />
     <ClInclude Include="MenuManager.h" />
     <ClInclude Include="CenterNote.h" />
-    <ClInclude Include="NoteManager_hard.h" />
-    <ClInclude Include="Player.h" />
+    <ClInclude Include="NoteManager.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="Scene.h" />
@@ -233,8 +227,6 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="SucceededManager.h" />
     <ClInclude Include="SucceededScene.h" />
-    <ClInclude Include="TestObject.h" />
-    <ClInclude Include="TestScene2.h" />
     <ClInclude Include="TimeManager.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="UnderLine.h" />

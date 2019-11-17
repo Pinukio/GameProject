@@ -6,9 +6,10 @@
 #include "StartScene.h"
 #include "Black.h"
 
-FailedManager::FailedManager()
+FailedManager::FailedManager(bool isStory)
 {
 	arrow = Scene::GetCurrentScene().PushBackGameObject(new GameObject(L"resources/Scene/Failed/arrow.png", Vector2(790.0f, 340.0f)));
+	this->isStory = isStory;
 }
 
 void FailedManager::Update()
@@ -46,7 +47,10 @@ void FailedManager::Update()
 		switch (selected)
 		{
 		case 0:
-			Scene::GetCurrentScene().PushBackGameObject(new Black(1)); // hard
+			if (!isStory)
+				Scene::GetCurrentScene().PushBackGameObject(new Black(1)); // hard
+			else
+				Scene::GetCurrentScene().PushBackGameObject(new Black(2)); // story
 			break;
 		case 1:
 			Scene::GetCurrentScene().PushBackGameObject(new Black(0)); // start

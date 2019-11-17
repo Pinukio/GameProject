@@ -3,11 +3,12 @@
 #include "Appear.h"
 #include "SucceededManager.h"
 
-SucceededScene::SucceededScene(unsigned short perfect, unsigned short great, unsigned short miss)
+SucceededScene::SucceededScene(unsigned short perfect, unsigned short great, unsigned short miss, bool isStory)
 {
 	this->perfect = perfect;
 	this->great = great;
 	this->miss = miss;
+	this->isStory = isStory;
 }
 
 void SucceededScene::Initialize()
@@ -19,7 +20,7 @@ void SucceededScene::Initialize()
 	PushBackGameObject(new GameObject(L"resources/Scene/Succeeded/restart.png", Vector2(1700.0f, 700.0f)));
 	PushBackGameObject(new GameObject(L"resources/Scene/Succeeded/select.png", Vector2(1700.0f, 800.0f)));
 	PushBackGameObject(new GameObject(L"resources/Scene/Succeeded/finish.png", Vector2(1700.0f, 900.0f)));
-	PushBackGameObject(new SucceededManager());
+	PushBackGameObject(new SucceededManager(isStory));
 	WriteScore(perfect, 500.0f);
 	WriteScore(great, 960.0f);
 	WriteScore(miss, 1420.0f);

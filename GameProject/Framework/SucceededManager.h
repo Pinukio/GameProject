@@ -6,8 +6,9 @@ class SucceededManager :
 private:
 	GameObject* arrow;
 	unsigned short selected = 0;
+	bool isStory;
 public:
-	SucceededManager();
+	SucceededManager(bool isStory);
 	virtual void Update();
 };
 

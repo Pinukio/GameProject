@@ -46,15 +46,6 @@
     <Filter Include="Game_story">
       <UniqueIdentifier>{38829f73-9d72-4095-9aa7-468d1c954015}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game_hard\Scene">
-      <UniqueIdentifier>{21271d47-2d04-4d0b-a696-62e979c98641}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game_story\Scene">
-      <UniqueIdentifier>{611e5ce2-ed2b-4448-84bb-69f58767f1b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game_hard\Manager">
-      <UniqueIdentifier>{cfb6bc61-99b1-4c56-b715-3834468aa698}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Assets\score">
       <UniqueIdentifier>{61c66702-4250-40e4-9699-be77682cdfc3}</UniqueIdentifier>
     </Filter>
@@ -94,7 +85,6 @@
     <ClCompile Include="Component.cpp">
       <Filter>Components</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Collider.cpp">
       <Filter>Components</Filter>
     </ClCompile>
@@ -104,7 +94,6 @@
     <ClCompile Include="CircleCollider.cpp">
       <Filter>Components\Collider</Filter>
     </ClCompile>
-    <ClCompile Include="TestObject.cpp" />
     <ClCompile Include="Collision.cpp">
       <Filter>Components\Collider</Filter>
     </ClCompile>
@@ -131,12 +120,6 @@
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="GameScene.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="TestScene2.cpp">
-      <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="StartScene.cpp">
       <Filter>Start</Filter>
@@ -171,18 +154,6 @@
     <ClCompile Include="SideNote.cpp">
       <Filter>Assets\note</Filter>
     </ClCompile>
-    <ClCompile Include="GameSceneHard.cpp">
-      <Filter>Game_hard\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="GameSceneStory.cpp">
-      <Filter>Game_story\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="NoteManager_hard.cpp">
-      <Filter>Game_hard\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="KeyManager.cpp">
-      <Filter>Game_hard\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="Light.cpp">
       <Filter>Assets\light</Filter>
     </ClCompile>
@@ -201,17 +172,29 @@
     <ClCompile Include="Appear.cpp">
       <Filter>Assets\black</Filter>
     </ClCompile>
-    <ClCompile Include="FailedScene.cpp">
-      <Filter>Game_hard\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="FailedManager.cpp">
-      <Filter>Game_hard\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="SucceededScene.cpp">
-      <Filter>Game_hard\Scene</Filter>
+      <Filter>Manager</Filter>
     </ClCompile>
     <ClCompile Include="SucceededManager.cpp">
-      <Filter>Game_hard\Manager</Filter>
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="FailedScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SucceededScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="NoteManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSceneStory.cpp">
+      <Filter>Game_story</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSceneHard.cpp">
+      <Filter>Game_hard</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -248,7 +231,6 @@
     <ClInclude Include="Component.h">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h" />
     <ClInclude Include="Collider.h">
       <Filter>Components</Filter>
     </ClInclude>
@@ -258,7 +240,6 @@
     <ClInclude Include="CircleCollider.h">
       <Filter>Components\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="TestObject.h" />
     <ClInclude Include="Collision.h">
       <Filter>Components\Collider</Filter>
     </ClInclude>
@@ -285,12 +266,6 @@
     </ClInclude>
     <ClInclude Include="InputManager.h">
       <Filter>Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="GameScene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="TestScene2.h">
-      <Filter>Scene</Filter>
     </ClInclude>
     <ClInclude Include="StartScene.h">
       <Filter>Start</Filter>
@@ -325,18 +300,6 @@
     <ClInclude Include="SideNote.h">
       <Filter>Assets\note</Filter>
     </ClInclude>
-    <ClInclude Include="GameSceneHard.h">
-      <Filter>Game_hard\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="GameSceneStory.h">
-      <Filter>Game_story\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="NoteManager_hard.h">
-      <Filter>Game_hard\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyManager.h">
-      <Filter>Game_hard\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="Light.h">
       <Filter>Assets\light</Filter>
     </ClInclude>
@@ -355,17 +318,29 @@
     <ClInclude Include="Appear.h">
       <Filter>Assets\black</Filter>
     </ClInclude>
-    <ClInclude Include="FailedScene.h">
-      <Filter>Game_hard\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="FailedManager.h">
-      <Filter>Game_hard\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="SucceededScene.h">
-      <Filter>Game_hard\Scene</Filter>
+      <Filter>Manager</Filter>
     </ClInclude>
     <ClInclude Include="SucceededManager.h">
-      <Filter>Game_hard\Manager</Filter>
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="FailedScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SucceededScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="NoteManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSceneStory.h">
+      <Filter>Game_story</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSceneHard.h">
+      <Filter>Game_hard</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
