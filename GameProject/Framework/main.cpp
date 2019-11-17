@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "Framework.h"
-#include "GameScene.h"
 #include "Math.h"
 #include "StartScene.h"
 

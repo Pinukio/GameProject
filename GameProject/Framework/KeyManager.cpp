@@ -321,7 +321,6 @@ void KeyManager::HitNote(std::vector<SideNote*>& note, Line* line, UnderLine* un
 {
 	if (note[0]->col.Intersected(line->col))
 	{
-		std::cout << "HE";
 		perfect++;
 		count_hit++;
 
@@ -341,7 +340,6 @@ void KeyManager::HitNote(std::vector<SideNote*>& note, Line* line, UnderLine* un
 
 	else if (note[0]->col.Intersected(underLine->col))
 	{
-		std::cout << "HE";
 		great++;
 		count_hit++;
 

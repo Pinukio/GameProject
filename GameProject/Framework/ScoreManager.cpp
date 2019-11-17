@@ -14,101 +14,106 @@ void ScoreManager::Update()
 {
 	if (tmp != hp)
 	{
-		isChanged = true;
+		colour->transform->SetScale(1.0f, (float)hp / 100.0f);
+		tmp = hp;
 	}
-	else
-		isChanged = false;
 
-	if (isChanged)
-	{
+	//if (tmp != hp)
+	//{
+	//	isChanged = true;
+	//}
+	//else
+	//	isChanged = false;
 
-		if (tmp > hp) //깎인 경우
-		{
-			for (int i = 0; i < 6; i++)
-			{
+	//if (isChanged)
+	//{
+	//	if (tmp > hp) //깎인 경우
+	//	{
+	//		for (int i = 0; i < 10; i++)
+	//		{
+	//			if (lastIndex == 10000)
+	//			{
+	//				index = tmp * 10 - count;
+	//				lastIndex = index;
+	//			}
 
-				if (lastIndex == 10000)
-				{
-					index = tmp * 10 - count;
-					lastIndex = index;
-				}
+	//			else if (lastIndex != index)
+	//			{
+	//				index = lastIndex;
 
-				else if (lastIndex != index)
-				{
-					index = lastIndex;
+	//				if(lastIndex - tmp * 10 > 0)
+	//				count = lastIndex - tmp * 10;
 
-					if(lastIndex - tmp * 10 > 0)
-					count = lastIndex - tmp * 10;
+	//				else
+	//					count = (lastIndex - tmp * 10) * -1;
+	//			}
 
-					else
-						count = (lastIndex - tmp * 10) * -1;
-				}
+	//			else
+	//				index = tmp * 10 - count;
 
-				else
-					index = tmp * 10 - count;
+	//			lastIndex = index;
 
-				lastIndex = index;
+	//			if (index > 1000)
+	//			{
+	//				isChanged = false;
+	//				break;
+	//			}
+	//			else
+	//			{
+	//				colour->transform->SetScale(1.0f, (float)index / 1000.0f);
+	//			}
 
-				if (index > 999)
-				{
-					isChanged = false;
-					break;
-				}
-				else
-				{
-					colour->transform->SetScale(1.0f, (float)index / 1000.0f);
-				}
+	//			if (count == 10)
+	//			{
+	//				count = 0;
+	//				tmp--;
+	//			}
+	//			
+	//			count++;
+	//		}
+	//	}
 
-				if (count == 10)
-				{
-					count = 0;
-					tmp--;
-				}
-				
-				count++;
-			}
-		}
+	//	else if (tmp < hp) // 회복된 경우
+	//	{
+	//		for (int i = 0; i < 10; i++)
+	//		{
+	//			if (lastIndex != index2)
+	//			{
+	//				index2 = lastIndex;
 
-		else if (tmp < hp) // 회복된 경우
-		{
-			for (int i = 0; i < 6; i++)
-			{
-				if (lastIndex != index2)
-				{
-					index2 = lastIndex;
+	//				if(tmp * 10 - lastIndex > 0)
+	//					count = tmp * 10 - lastIndex;
+	//				else
+	//					count = (tmp * 10 - lastIndex) * -1;
+	//			}
 
-					if(tmp * 10 - lastIndex > 0)
-						count = tmp * 10 - lastIndex;
-					else
-						count = (tmp * 10 - lastIndex) * -1;
-				}
+	//			else
+	//				index2 = tmp * 10 - count;
+	//		
+	//			lastIndex = index2;
 
-				else
-					index2 = tmp * 10 - count;
-			
-				lastIndex = index2;
+	//			if (index2 > 1000)
+	//			{
+	//				isChanged = false;
+	//				break;
+	//			}
 
-				if (index2 > 999)
-				{
-					isChanged = false;
-					break;
-				}
+	//			else
+	//			{
+	//				std::cout << "index : " << index2 << std::endl << "hp : " << hp << std::endl;
+	//				colour->transform->SetScale(1.0f, (float)index2 / 1000.0f);
+	//			}
+	//			
+	//			if (count == 0)
+	//			{
+	//				count = 10;
+	//				tmp++;
+	//			}
 
-				else
-				{
-					colour->transform->SetScale(1.0f, (float)index2 / 1000.0f);
-				}
-				
-				if (count == 0)
-				{
-					count = 10;
-					tmp++;
-				}
+	//			count--;
 
-				count--;
-
-			}
-		}
-	}
+	//		}
+	//	}
+	//}
 
 }

@@ -8,7 +8,6 @@
 #include "Key3.h"
 #include "Key4.h"
 #include "KeyManager.h"
-#include "KeyManager_story.h"
 
 class NoteManager
 	:public GameObject
@@ -30,7 +29,6 @@ private:
 	Key1* key1; Key2* key2; Key3* key3; Key4* key4;
 
 	KeyManager* keyManager;
-	KeyManager_story* keyManager_story;
 	
 public:
 
